@@ -22,7 +22,7 @@ const App = () => {
   }
 
   const generateComputerChoice = () => {
-    const randomChoice = choices[Math.floor(Math.random() * choices.length)]
+    const randomChoice = choices[Math.floor(Math.random() * 3)]
     setComputerChoice(randomChoice)
     setImmediate(3000)
     
@@ -67,18 +67,18 @@ const App = () => {
       </div>
 <div className='butts'>
       <button onClick={() => handleClick('rock')} 
-      className='rocks'><Icon icon="noto:rock" className='icon'/></button>
+      className='rocks'><Icon icon="emojione:right-facing-fist-medium-dark-skin-tone" className='icon'/></button>
 
 
        <button onClick={() => handleClick('paper')}
        className='rocks'>
-       <Icon icon="twemoji:scroll" className='icon'/>
+       <Icon icon="openmoji:waving-hand" className='icons'/>
        </button>
 
 
   <button onClick={() => handleClick('scissors')}
   className='rocks'>
-  <Icon icon="openmoji:scissors" className='icons'/>
+  <Icon icon="openmoji:victory-hand" className='icons'/>
   </button>
   </div>
 
