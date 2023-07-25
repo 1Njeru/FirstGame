@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import { Icon } from '@iconify/react';
-import { wait } from '@testing-library/user-event/dist/utils';
+
 
 const App = () => {
   const [userChoice, setUserChoice] = useState(null)
